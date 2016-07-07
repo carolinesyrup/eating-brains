@@ -30,14 +30,6 @@ get_header(); ?>
 			<section id="skills">
 				<div class="container">
 
-					<?php
-            $icon_1 = get_field('icon_1');
-						$icon_2 = get_field('icon_2');
-						$icon_3 = get_field('icon_3');
-						//echo get_post_field( 'post_content', $frontpage_id );
-
-          ?>
-
 					<?php $args = array (
 						'post_type' => 'skills',
 						'posts_per_page' => 3,
