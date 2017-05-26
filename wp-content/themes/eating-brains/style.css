@@ -3,7 +3,7 @@ Theme Name: Eating Brains
 Theme URI: http://underscores.me/
 Author: Caro Griffin
 Author URI: http://carolinesyrup.com
-Description: My own take on the Skillcrush 101 theme developed by Skillcrush for use in HTML and CSS classes, with an iZombie flare.
+Description: My take on the static website we developed at Skillcrush for use in Skillcrush 101, our HTML and CSS class.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -102,7 +102,7 @@ a {
 	background-color: transparent;
 	text-decoration: none;
 	border-bottom: 1px solid #e7ff82;
-	
+
 }
 
 a:active,
@@ -1301,12 +1301,34 @@ h1.cta {
 	border-bottom: 0;
 }
 
+@media(max-width:900px){
+	.individual-skill {
+		width: 48%;
+		margin-right: 2%;
+		float: left;
+	}
+	.individual-skill:nth-child(2) {
+		margin-right: 0;
+	}
+}
+@media(max-width:600px){
+	.individual-skill {
+		width: 100%;
+		float: none;
+		margin: 1em 0;
+	}
+	.container .alignleft,
+	.container .alignright {
+		width: 100%;
+		margin: 0;
+	}
+
 /*--------------------------------------------------------------
 ## Speaking Page
 --------------------------------------------------------------*/
 
-body.page-id-4188 .entry-footer { 
-     display: none; 
+body.page-id-4188 .entry-footer {
+     display: none;
 }
 
 .past-talk {
