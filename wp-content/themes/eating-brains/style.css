@@ -57,7 +57,7 @@ html {
 }
 
 body {
-	width: 90%;
+	/*width: 90%;*/
 	margin: auto;
 }
 
@@ -643,10 +643,10 @@ a.more-link {
 	display: inline-block;
 	padding-left: 2em;
 	font-family: 'Open Sans', sans-serif;
-    	letter-spacing: 0.05em;
-    	line-height: 1em;
+    letter-spacing: 0.05em;
+    line-height: 1em;
    	font-weight: 700;
-    	font-size: 14px;
+    font-size: 14px;
 }
 
 .main-navigation a {
@@ -723,9 +723,31 @@ a.more-link {
 }
 
 .site-header {
-	padding-bottom: 1em;
+	/*padding-bottom: 1em;*/
+	padding: 1em 1.25em;
 	border-bottom: 1px solid #70cccd;
 	margin-bottom: 2em;
+}
+.single .site-content{
+	width: 100%;
+}
+
+.single .site-header,
+.home .site-header {
+	padding: 1em 1.25em;
+	border-bottom: 1px solid #70cccd;
+	margin-bottom: 2em;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.2);
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.single .site-main {
+	width: 70%;
+	margin: 0 auto;
 }
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -890,6 +912,16 @@ a.more-link {
 # Content
 --------------------------------------------------------------*/
 
+.blog #content {
+	padding-top: 2em;
+	width: 85%;
+	margin: 0 auto;
+}
+.content-area {
+	width: 90%;
+	margin: 0 auto;
+}
+
 .blog-area {
 	float: left;
 	margin: 0 -25% 0 0;
@@ -918,6 +950,31 @@ a.more-link {
 
 .testimonial-source {
 	margin-bottom: 0em;
+}
+
+@media screen and (max-width:900px){
+
+	.blog #content {
+		padding-top: 1em;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.blog-main, .site-content .widget-area {
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+	.blog-area {
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
+	.main-navigation {
+		float: none;
+		clear: both;
+		width: 100%;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1017,6 +1074,25 @@ a.more-link {
 	color: #70cccd;
 }
 
+.single-blog-hero {
+	height: 40em;
+}
+.single .single-title{
+	padding: 15em 3em 2em;
+	margin-bottom: 3em;
+}
+.single .overlay {
+	color: white;
+}
+
+@media screen and (max-width: 900px) {
+	.single .site-main {
+		width: 85%;
+	}
+	.single .single-title {
+		font-size: 90%;
+	}
+}
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
@@ -1151,8 +1227,16 @@ object {
 --------------------------------------------------------------*/
 .home {
 	font-family: 'Open Sans', sans-serif;
+	/*background: url(http://carolinesyrup.com/wp-content/uploads/2016/10/caro-griffin.jpg) no-repeat;
+	background-size: 100%;*/
+}
+
+
+.home-hero {
 	background: url(http://carolinesyrup.com/wp-content/uploads/2016/10/caro-griffin.jpg) no-repeat;
-	background-size: 100%;
+  	height: 800px;
+	background-size: cover;
+  	position: relative;
 }
 
 header > .container {
@@ -1182,9 +1266,9 @@ span.greeting {
 	color: #fff;
 	font-weight: bold;
 }
-.description {
+.home .description {
 	float: right;
-	padding-top: 2.2em;
+	padding-top: 5.5em;
 	padding-bottom: 6em;
 	max-width: 700px;
 }
@@ -1299,6 +1383,47 @@ h1.cta {
 .social-icons li a:hover, a:focus, a:active {
 	color: #70cccd;
 	border-bottom: 0;
+}
+
+@media(max-width:900px){
+	.individual-skill {
+		width: 48%;
+		margin-right: 2%;
+		float: left;
+	}
+	.individual-skill:nth-child(2) {
+		margin-right: 0;
+	}
+}
+@media(max-width:600px){
+	.individual-skill {
+		width: 100%;
+		float: none;
+		margin: 1em 0;
+	}
+	.container .alignleft,
+	.container .alignright {
+		width: 100%;
+		margin: 0;
+	}
+	.home-hero {
+		/*height: 500px;*/
+	}
+	.home .description {
+		float: none;
+		max-width: 90%;
+		margin: 0 auto;
+		padding-top: 60%;
+	}
+	.home .site-description {
+		font-size: 40px;
+		line-height: 120%;
+		font-weight: 500;
+	}
+	.site-branding {
+		width: 90%;
+		float: none;
+	}
 }
 
 /*--------------------------------------------------------------

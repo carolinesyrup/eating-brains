@@ -4,18 +4,23 @@
  */
 get_header(); ?>
 
+	<div class="home-hero">
+		<section id="headline">
+			<div class="description">
+				<?php
+					$greeting = get_field('greeting');
+					$short_description = get_field('short_description');
+				?>
+				<p class="site-description"><span class="greeting"><?php echo $greeting; ?></span> <?php echo $short_description; ?></p>
+			</div>
+		</section>
+
+		
+	</div>
+
 	<div id="primary" class="content-area lander-page">
 		<main id="main" class="site-main" role="main">
 
-			<section id="headline">
-				<div class="description">
-					<?php
-						$greeting = get_field('greeting');
-						$short_description = get_field('short_description');
-					?>
-					<p class="site-description"><span class="greeting"><?php echo $greeting; ?></span> <?php echo $short_description; ?></p>
-				</div>
-			</section>
 
 			<section id="about">
 				<div class="container about-text">
