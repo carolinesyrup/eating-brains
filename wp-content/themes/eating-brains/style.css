@@ -3,7 +3,7 @@ Theme Name: Eating Brains
 Theme URI: http://underscores.me/
 Author: Caro Griffin
 Author URI: http://carolinesyrup.com
-Description: My own take on the Skillcrush 101 theme developed by Skillcrush for use in HTML and CSS classes, with an iZombie flare.
+Description: My own take on the Skillcrush 101 theme developed by Skillcrush for use in our introductory HTML and CSS class, named after an iZombie joke taken a little too far.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -102,7 +102,7 @@ a {
 	background-color: transparent;
 	text-decoration: none;
 	border-bottom: 1px solid #e7ff82;
-	
+
 }
 
 a:active,
@@ -612,14 +612,6 @@ a.more-link {
 	color: #2d6684;
 }
 
-.page-id-4098 .site-title a {
-	color: #e7ff82;
-}
-
-.page-id-4098 .main-navigation a {
-	color: #e7ff82;
-}
-
 .site-description a {
 	text-align: right;
 }
@@ -738,7 +730,7 @@ a.more-link {
 	border-bottom: 1px solid #70cccd;
 	margin-bottom: 2em;
 	position: absolute;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(255, 255, 255, 1);
 	top: 0;
 	right: 0;
 	left: 0;
@@ -747,7 +739,7 @@ a.more-link {
 
 .single .site-main {
 	width: 70%;
-	margin: 0 auto;
+	margin: 3.5em auto;
 }
 .site-main .comment-navigation,
 .site-main .posts-navigation,
@@ -967,13 +959,13 @@ a.more-link {
 	}
 	.blog-area {
 		float: none;
-		width: 100%;
+		width: 90%;
 		margin: 0;
 	}
 	.main-navigation {
 		float: none;
 		clear: both;
-		width: 100%;
+		width: 80%;
 	}
 }
 
@@ -1075,7 +1067,8 @@ a.more-link {
 }
 
 .single-blog-hero {
-	height: 40em;
+	height: 30em;
+	margin-top: 5.5em;
 }
 .single .single-title{
 	padding: 15em 3em 2em;
@@ -1083,6 +1076,23 @@ a.more-link {
 }
 .single .overlay {
 	color: white;
+}
+
+.single .overlay_title {
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	font-size: 3em;
+	line-height: 110%;
+	color: #fff;
+}
+
+.single .overlay_date {
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	font-size: 1.15em;
+	letter-spacing: 0.05em;
+	line-height: 1em;
+	font-weight: 700;
 }
 
 @media screen and (max-width: 900px) {
@@ -1234,7 +1244,7 @@ object {
 
 .home-hero {
 	background: url(http://carolinesyrup.com/wp-content/uploads/2016/10/caro-griffin.jpg) no-repeat;
-  	height: 800px;
+  	height: 600px;
 	background-size: cover;
   	position: relative;
 }
@@ -1268,7 +1278,7 @@ span.greeting {
 }
 .home .description {
 	float: right;
-	padding-top: 5.5em;
+	padding-top: 9.5em;
 	padding-bottom: 6em;
 	max-width: 700px;
 }
@@ -1430,8 +1440,8 @@ h1.cta {
 ## Speaking Page
 --------------------------------------------------------------*/
 
-body.page-id-4188 .entry-footer { 
-     display: none; 
+body.page-id-4188 .entry-footer {
+     display: none;
 }
 
 .past-talk {
