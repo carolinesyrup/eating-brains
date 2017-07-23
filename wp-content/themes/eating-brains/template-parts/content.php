@@ -22,12 +22,6 @@
 		<div class="entry-meta">
 			<?php eating_brains_posted_on(); ?>
 		</div><!-- .entry-meta -->
-		<div class="featured-image">
-			<?php
-				if ( is_home() ) {
-					the_post_thumbnail( 'single-post-thumbnail' );
-				} ?>
-		</div>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
