@@ -1444,13 +1444,28 @@ body.page-id-4188 .entry-footer {
      display: none;
 }
 
-.past-talk {
-	padding-top: 1.5em;
+/* Top of the page */
+
+.speaker-photo {
+	max-width: 100%;
+	width: 50%;
+	float: left;
+	margin-right: 1em;
 }
 
-.speaker-title {
+.speaker-intro {
+	padding-top: 0;
+}
+
+/* Styling the previous and upcoming sections */
+
+.speaker-subheading {
 	font-family: 'Lora', serif;
 	color: #2d6684;
+}
+
+.past-talk {
+	padding-top: 1.5em;
 }
 
 .talk-title {
@@ -1465,6 +1480,9 @@ body.page-id-4188 .entry-footer {
     color: #b3b3b1;
     font-size: .8em;
     text-transform: uppercase;
+}
+
+.talk-description {
 }
 
 /*--------------------------------------------------------------
