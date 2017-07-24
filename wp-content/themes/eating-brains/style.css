@@ -1073,6 +1073,10 @@ a.more-link {
 .single .single-title{
 	padding: 15em 3em 2em;
 	margin-bottom: 3em;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	line-height: 110%;
+	color: #70cccd;
 }
 .single .overlay {
 	color: white;
@@ -1596,6 +1600,11 @@ body.page-id-4188 .entry-footer {
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
+
+#comments.comments-area {
+	border-top: 1px solid #70cccd;
+	padding-top: 1em;
+}
 
 .comments-title {
 	font-family: 'Lora', Georgia, serif;
